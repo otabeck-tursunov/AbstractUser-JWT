@@ -11,10 +11,6 @@ from .serializers import CustomUserSerializer
 from rest_framework.generics import *
 
 
-class Get_Token(TokenObtainPairView):
-    serializer_class = TokenObtainPairView.serializer_class
-
-
 class CustomUserListCreateAPIView(ListCreateAPIView):
     queryset = CustomUser.objects.all()
     serializer_class = CustomUserSerializer
